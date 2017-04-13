@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>泰然云</title>
+	<meta name="description" content="泰然云，同我们一起打造你的云。">
+	<meta name="keywords" content="泰然云，私有云，云盘，云服务">
+	<meta name="author" content="泰然鲸数">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-4.2.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <!-- IE<=9 H5+CSS3补丁  -->
+    <!--[if lte IE 9]>                         
+	   <script src="js/html5shiv.min.js"></script>
+	   <script src="js/respond.min.js"></script>                      
+	<![endif]-->
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="images/favicon.ico">
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+	<div class="top">
+		<div class="container">
+			<div class="user pull-right">
+				欢迎来到云，<a href="login.html">请登录</a><span>|</span><a href="register.html">注册</a>
+			</div>
+		</div>
+	</div> <!--top-->
+	<div class="nav-all">
+		<div class="container">
+			<nav class="navbar"> <!--.navbar-fixed-top固定在顶部，且需body { padding-top: 70px; }-->
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="fa fa-bars fa-lg"></span>
+			      </button>
+			      <a class="navbar-brand" href="index.html">
+			      	<img src="images/logo-sm.png"/>
+			      </a>
+			    </div>			
+			    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+			        <li><a href="product.html">产品</a></li>
+			        <li><a href="login.html">私有云</a></li>
+			        <li><a href="login.html">云盘</a></li>
+			        <li class="dropdown">
+			        	<a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务</a>
+				        <ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+						    <li><a href="#1">日志平台</a></li>
+						    <li><a href="#1">观天台</a></li>
+						</ul>			        	
+			        </li>
+			        <li><a href="document.html">文档</a></li>
+			        <li><a href="about.html">关于</a></li>
+			      	<li >
+					    <div class="form-group  has-feedback">
+						  <input type="text" class="form-control" placeholder="搜索本站"/>
+						  <span class="glyphicon glyphicon-search form-control-feedback"></span>
+						  <span class="sr-only">(success)</span>
+						</div>     		
+			      	</li>
+			        
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</div> <!--nav-->
+	<!--图片轮播-->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->		  
+	  <ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	  </ol>		
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <img src="images/slider-1.jpg" alt="...">
+			  <div class="carousel-caption1 hidden-sm hidden-xs">
+			    	<h2>数据即财富·让云成为制造财富的引擎</h2>
+			    	<p style="font-size:14px;">构建云金融信息统一处理平台    构建云金融信息安全平台    构建云金融一站式财富管理平台</p>
+			  </div>
+			</div>
+			<div class="item">
+			  <img src="images/slider-2.jpg" alt="...">
+			  <div class="carousel-caption1 hidden-sm hidden-xs">
+			    	<h2>云,企业数据汇集及存储平台</h2>
+			    	<p style="font-size: 14px;">数据极速可达</p>
+			  </div>
+			</div>
+	  </div>		
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>		  
+	</div>		
+	<div class="advantage">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<span class="fa fa-send"></span>
+					<h3>极速调度</h3>
+					<p>在泰然云，所有计算、存储、网络资源都是秒级响应。如果初始资源不够用，可以弹性扩展伸缩。不需要的资源可以随时销毁。随需应变，无需等待。</p>
+				</div>
+				<div class="col-sm-3">
+					<span class="fa fa-cloud"></span>
+					<h3>云环境</h3>
+					<p>通过 SDN 实现的虚拟路由器和交换机，您可以快速搭建属于自己的云环境，并提供 100% 的网络隔离，确保安全。</p>
+				</div>
+				<div class="col-sm-3">
+					<span class="fa fa-lock"></span>
+					<h3>数据安全</h3>
+					<p>私有网络提供100%二层隔离，在这个环境里，你的内部数据是非常安全的，黑客无法嗅探或者截获到你的数据。多重实时副本和备份可以保障即使在物理硬件彻底损坏时，数据也不会丢失，并且可以很快恢复业务。</p>
+				</div>
+				<div class="col-sm-3">
+					<span class="fa fa-database"></span>
+					<h3>出众的磁盘性能</h3>
+					<p>泰然云为您提供性能优异的块存储设备，可以达到或接近服务器物理硬盘的性能，完全能满足各主流数据库对磁盘的要求。同时，泰然云使用多重实时副本来保障数据安全，且至少包含一份异地副本，极大提高容灾能力。</p>
+				</div>
+			</div>
+		</div>
+	</div> <!--advantage-->
+	<div class="banner">
+		<div class="banner-top">
+			<img src="images/slider2-top.png" alt="云盘"/>
+		</div>
+		<div class="banner-center">
+			<img class="img-responsive" src="images/slider2-1.jpg" alt="云化你的生活" />
+		</div>
+		<div class="banner-bottom">
+			<img src="images/slider2-bottom.png"/>
+		</div>
+	</div> <!--banner-->
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3"><h4>同我们一起打造你的云</h4></div>
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3"><span class="fa fa-envelope"></span><span>trcloud@tairanchina.com</span></div>
+				<div class="col-sm-3"><span class="fa fa-phone"></span><span>400-669-0685</span></div>
+			</div>
+			<hr />
+			<div class="row">
+				<h5 style="text-indent: 1em;">在知识爆炸的年代，我们不愿成为知识的过客，拥抱开源文化，发挥社区的力量，参与到开源项目能获得自我提升。</h5>
+			</div>
+		</div>
+	</div> <!--contact-->
+	<div class="bottom">
+		<div class="container">
+			<div class="link">
+				<div class="row">
+					<div class="col-sm-2 col-xs-6">
+						<dl>
+							<dt>新手指南</dt>
+							<dd><a href="#1">新手专区</a></dd>
+							<dd><a href="#1">免费体验</a></dd>
+							<dd><a href="#1">金牌服务</a></dd>
+						</dl>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<dl>
+							<dt>服务与支持</dt>
+							<dd><a href="#1">论坛</a></dd>
+							<dd><a href="#1">帮助中心</a></dd>
+							<dd><a href="#1">最新资讯</a></dd>
+						</dl>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<dl>
+							<dt>常见问题</dt>
+							<dd><a href="#1">安全白皮书</a></dd>
+						</dl>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<dl>
+							<dt>用户中心</dt>
+							<dd><a href="#1">管理控制台</a></dd>
+							<dd><a href="#1">备案管理</a></dd>
+							<dd><a href="#1">订单管理</a></dd>
+							<dd><a href="#1">会员管理</a></dd>
+						</dl>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<dl>
+							<dt>其他</dt>
+							<dd><a href="#1">线下活动</a></dd>
+							<dd><a href="#1">开发者大会</a></dd>
+							<dd><a href="#1">建议反馈</a></dd>
+						</dl>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<dl>
+							<dt>关注泰然云 <span class="fa fa-qrcode"></span></dt>
+							<dd><img class="qrcode" src="images/qrcode.jpg" alt="二维码"/></dd>
+						</dl>
+					</div>
+				</div>
+			</div> <!--link-->
+			<hr />
+			<div class="friend-link">
+				<h5>友情链接</h5>
+				<div>
+					<span><a href="#1" title="中国开栈云社区">中国开栈云社区</a></span>
+					<span><a href="#1" title="about云社区">about云社区</a></span>
+				</div>
+				<h5>© 2016<a href="#1">TRCloud, Inc.</a> 浙ICP备14022981号-5 by  泰然鲸数</h5>
+				<h5>©<a href="#1">360TAIHE.COM</a> 浙江小泰科技有限公司 版权所有</h5>
+				<div class="text-center">
+					<a href="#1"><img src="images/beian.png"/>浙公网安备 33010802003077号</a>
+				</div>
+			</div> <!--friend-link-->
+		</div> <!--container-->
+	</div> <!--bottom-->
+	<div class="gotop">
+		<a href="javascript:"><i class="fa fa-arrow-up fa-2x"></i></a>
+	</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap-3.3.7.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		setInterval(function(){		
+			if($('.banner-center img').attr('src')=='images/slider2-1.jpg'){
+				$('.banner-center img').attr('src','images/slider2-2.jpg');
+			}else{
+				$('.banner-center img').attr('src','images/slider2-1.jpg');
+			}
+		},5000)
+
+	})
+	$(document).scroll(function(){
+		var $height = $(window).scrollTop();
+		if($height>=50){
+			$('.gotop').fadeIn(600);
+		}else{
+			$('.gotop').fadeOut(600);
+		}
+	})
+	$('.gotop').click(function(){
+		$('html,body').animate({scrollTop:0},200)
+	})
+
+</script>
+</body>
+</html>

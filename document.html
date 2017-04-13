@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>泰然云—文档</title>
+	<meta name="description" content="泰然云，同我们一起打造你的云。">
+	<meta name="keywords" content="泰然云，私有云，云盘，云服务">
+	<meta name="author" content="泰然鲸数">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-4.2.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <!-- IE<=9 H5+CSS3补丁  -->
+    <!--[if lte IE 9]>                         
+	   <script src="js/html5shiv.min.js"></script>
+	   <script src="js/respond.min.js"></script>                      
+	<![endif]-->
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="images/favicon.ico">
+	<link rel="icon" href="images/favicon.ico">
+	<style type="text/css">
+		.products .col-md-2{
+			width:15em;
+		}
+		.products .col-md-2 h4{
+			border-left:2px solid black;
+			padding-left:0.5em;
+		}
+		.products .col-md-2 a p{
+			text-indent: 1.1em;
+			font-size:13px;
+			margin: 0;
+			padding:5px 0;
+			width:12em;
+		}
+		.products .col-md-2 a:hover p{
+			background: lightgrey;
+		}
+		.products .col-md-9 h3{
+			padding-left:1em;
+			border-left:3px solid black;
+		}
+		.products .col-md-9 blockquote{
+			margin:20px 0;
+			font-size:14px;
+		}
+		.products .col-md-9 h5{
+			font-weight: 600;
+			margin-top:20px;
+		}
+		.products .col-md-9 p{
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="container">
+			<div class="user pull-right">
+				欢迎来到云，<a href="login.html">请登录</a><span>|</span><a href="register.html">注册</a>
+			</div>
+		</div>
+	</div> <!--top-->
+	<div class="nav-all">
+		<div class="container">
+			<nav class="navbar"> <!--.navbar-fixed-top固定在顶部，且需body { padding-top: 70px; }-->
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="fa fa-bars fa-lg"></span>
+			      </button>
+			      <a class="navbar-brand" href="index.html">
+			      	<img src="images/logo-sm.png"/>
+			      </a>
+			    </div>			
+			    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+			        <li><a href="product.html">产品</a></li>
+			        <li><a href="login.html">私有云</a></li>
+			        <li><a href="login.html">云盘</a></li>
+			        <li class="dropdown">
+			        	<a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务</a>
+				        <ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+						    <li><a href="#1">日志平台</a></li>
+						    <li><a href="#1">观天台</a></li>
+						</ul>			        	
+			        </li>
+			        <li><a href="document.html">文档</a></li>
+			        <li><a href="about.html">关于</a></li>
+			      	<li >
+					    <div class="form-group  has-feedback">
+						  <input type="text" class="form-control" placeholder="搜索本站"/>
+						  <span class="glyphicon glyphicon-search form-control-feedback"></span>
+						  <span class="sr-only">(success)</span>
+						</div>     		
+			      	</li>
+			        
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</div> <!--nav-->
+	<div class="text-banner" style="padding:5px 0 30px 0;background-color: #3879D9;color:white;">
+		<div class="container">
+			<h2 style="margin-top:0;padding-top:42px;font-weight: bold; text-indent: 1em;"><i class="fa fa-book"></i> 文档</h2>
+		</div>
+	</div> <!--text-banner-->
+	<div class="products">
+		<div class="container">
+			<div class="row">
+				<!--附加导航-->
+				<div class="col-md-1 hidden-sm hidden-xs"></div>
+				<div class="col-md-2 hidden-sm hidden-xs">
+					<h4>用户指南</h4>
+					<a href="#jianjie"><p>泰然云简介</p></a>
+					<a href="#kuaisu"><p>快速上手指南</p></a>
+					<h4>常见问题</h4>
+			 	</div> <!--col-md-2 附加导航-->
+			 	<div class="col-md-9 hidden-sm-12">
+			 		<h3>1.用户指南</h3>
+			 		<hr />
+			 		<h4 id="jianjie">1.1泰然云简介</h4>
+			 		<blockquote>
+			 			<p>泰然云是一个提供按需分配、弹性可伸缩的计算能力的公有云服务。通过使用泰然云， 您不必再为了软件开发、测试、以及应用/服务上线运行而购买物理设备了， 也不必投入人力物力进行设备维护。 您可以直接在云中迅速得到任意您需要的计算、存储、网络、安全等方方面面的能力， 并可以随时调整它们的规模。</p>
+			 			<p>泰然云执行按用量收费原则，即，您只需要为您使用了的资源付费。 而且，泰然云是按秒计费的，泰然云中的任何资源都是可以随时调整尺寸/规模的， 这最大程度地降低了您的费用、并为弹性计算提供了计费基础。</p>
+			 		</blockquote>
+			 		<h4 id="kuaisu">1.2快速上手指南</h4>
+			 		<blockquote>
+			 			<p>想要最快开始使用泰然云，最佳途径就是使用 WEB 控制台。 本篇指南旨在帮助新用户快速上手创建一个主机， 因此只会涉及最基本功能，不会详细探讨泰然云的全部功能。</p>
+			 			<p>如果您需要了解如何使用 SDN 网络功能来构建自己的网络拓扑，请参考网络拓扑指南。</p>
+			 		</blockquote>
+			 	
+			 		<h3>2.常见问题</h3>
+			 		<hr />
+			 	</div>
+			</div> <!--row-->
+		</div> <!--container-->
+	</div> <!--products-->
+	<div class="bottom" style="color:#666666;">
+		<div class="container">
+			<div class="contact">
+				<div class="row">
+					<div class="col-sm-3"><h4>同我们一起打造你的云</h4></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"><span class="fa fa-envelope"></span><span>trcloud@tairanchina.com</span></div>
+					<div class="col-sm-3"><span class="fa fa-phone"></span><span>400-669-0685</span></div>
+				</div>
+				<div style="border-top:1px solid  black;">
+					<h5>在知识爆炸的年代，我们不愿成为知识的过客，拥抱开源文化，发挥社区的力量，参与到开源项目能获得自我提升。</h5>
+				</div>
+			</div> <!--contact-->
+			<div class="friend-link">
+				<h5 style="text-align: left;">© 2016<a href="#1">TRCloud, Inc.</a> 浙ICP备14022981号-5 by  泰然鲸数</h5>
+				<h5 style="text-align: left;">©<a href="#1">360TAIHE.COM</a> 浙江小泰科技有限公司 版权所有</h5>
+			</div> <!--friend-link-->
+		</div> <!--container-->
+	</div> <!--bottom-->
+	<div class="gotop">
+		<a href="javascript:"><i class="fa fa-arrow-up fa-2x"></i></a>
+	</div>
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap-3.3.7.min.js"></script>
+<script type="text/javascript">
+	$('.gotop').click(function(){
+		$('html,body').animate({scrollTop:0},200)
+	})
+</script>
+</body>
+</html>
