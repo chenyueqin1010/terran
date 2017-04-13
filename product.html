@@ -20,19 +20,19 @@
 	<link rel="apple-touch-icon" href="images/favicon.ico">
 	<link rel="icon" href="images/favicon.ico">
 	<style type="text/css">
-		.products .col-md-10 h3{
+		.products .col-md-9 h3{
 			padding-left:1em;
 			border-left:3px solid black;
 		}
-		.products .col-md-10 blockquote{
+		.products .col-md-9 blockquote{
 			margin:20px 0;
 			font-size:14px;
 		}
-		.products .col-md-10 h5{
+		.products .col-md-9 h5{
 			font-weight: 600;
 			margin-top:20px;
 		}
-		.products .col-md-10 p{
+		.products .col-md-9 p{
 			font-size: 14px;
 		}
 		.panel-group{
@@ -91,9 +91,15 @@
 			        <li><a href="product.html">产品</a></li>
 			        <li><a href="login.html">私有云</a></li>
 			        <li><a href="login.html">云盘</a></li>
-			        <li><a href="#1">服务</a></li>
-			        <li><a href="#1">文档</a></li>
-			        <li><a href="#1">关于</a></li>
+			        <li class="dropdown">
+			        	<a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务</a>
+				        <ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+						    <li><a href="#1">日志平台</a></li>
+						    <li><a href="#1">观天台</a></li>
+						</ul>			        	
+			        </li>
+			        <li><a href="document.html">文档</a></li>
+			        <li><a href="about.html">关于</a></li>
 			      	<li >
 					    <div class="form-group  has-feedback">
 						  <input type="text" class="form-control" placeholder="搜索本站"/>

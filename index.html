@@ -47,9 +47,15 @@
 			        <li><a href="product.html">产品</a></li>
 			        <li><a href="login.html">私有云</a></li>
 			        <li><a href="login.html">云盘</a></li>
-			        <li><a href="login.html">服务</a></li>
-			        <li><a href="#1">文档</a></li>
-			        <li><a href="#1">关于</a></li>
+			        <li class="dropdown">
+			        	<a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务</a>
+				        <ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+						    <li><a href="#1">日志平台</a></li>
+						    <li><a href="#1">观天台</a></li>
+						</ul>			        	
+			        </li>
+			        <li><a href="document.html">文档</a></li>
+			        <li><a href="about.html">关于</a></li>
 			      	<li >
 					    <div class="form-group  has-feedback">
 						  <input type="text" class="form-control" placeholder="搜索本站"/>
@@ -243,6 +249,7 @@
 	$('.gotop').click(function(){
 		$('html,body').animate({scrollTop:0},200)
 	})
+
 </script>
 </body>
 </html>

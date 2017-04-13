@@ -82,9 +82,49 @@
 			color:white;
 			border-radius: 0;
 		}
+		.pc-download{
+			margin-left:10px;
+			display: inline-block;
+			text-align: center;
+		}
+		.modal-dialog{
+			margin-top:200px;
+		}
+		.android,.ios{
+			position: relative;
+		}
+		.android img,.ios img{
+			position: absolute;
+			bottom:35px;
+			left:-30px;
+			display: none;
+		}
+		.android:hover img{
+			display: block;
+		}
+		.ios:hover img{
+			display: block;
+		}
 	</style>
 </head>
 <body>
+<!--pc端下载 模态框-->
+	<div class="modal fade myModal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+        		<div class="pc-download">
+        			<h2><a href="#1" class="fa fa-laptop fa-1x"></a></h2>
+        			<h4>Windows客户端</h4>
+        		</div>
+        		<div class="pc-download" style="margin-left:30px;">
+        			<h2><a href="#1" class="fa fa-apple fa-1x"></a></h2>
+        			<h4>Mac客户端</h4>
+        		</div>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 	<div class="top">
 		<div class="container">
 			<div class="user pull-right">
@@ -111,9 +151,15 @@
 			        <li><a href="product.html">产品</a></li>
 			        <li><a href="login.html">私有云</a></li>
 			        <li><a href="login.html">云盘</a></li>
-			        <li><a href="#1">服务</a></li>
-			        <li><a href="#1">文档</a></li>
-			        <li><a href="#1">关于</a></li>
+			        <li class="dropdown">
+			        	<a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">服务</a>
+				        <ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+						    <li><a href="#1">日志平台</a></li>
+						    <li><a href="#1">观天台</a></li>
+						</ul>			        	
+			        </li>
+			        <li><a href="document.html">文档</a></li>
+			        <li><a href="about.html">关于</a></li>
 			      	<li >
 					    <div class="form-group  has-feedback">
 						  <input type="text" class="form-control" placeholder="搜索本站"/>
@@ -176,13 +222,19 @@
 		<div class="container">
 			<div class="row download">
 				<div class="col-sm-3">
-					<a href="#1"><i class="fa fa-desktop fa-3x"></i>Windows & Mac</a>
+					<a href="#1" data-toggle="modal" data-target=".myModal"><i class="fa fa-desktop fa-3x"></i>Windows & Mac</a>
 				</div>
 				<div class="col-sm-3">
-					<a href="#1"><i class="fa fa-android fa-3x"></i>Android</a>
+					<a href="#1" class="android">
+						<i class="fa fa-android fa-3x"></i>Android
+						<img src="images/netdisk-app-android.jpg"/>
+					</a>
 				</div>
 				<div class="col-sm-3">
-					<a href="#1"><i class="fa fa-apple fa-3x"></i>IOS</a>
+					<a href="#1" class="ios">
+						<i class="fa fa-apple fa-3x"></i>IOS
+						<img src="images/netdisk-app-ios.jpg"/>
+					</a>
 				</div>
 				<div class="col-sm-3">
 					<div class="row">
@@ -221,6 +273,7 @@
 	$('.gotop').click(function(){
 		$('html,body').animate({scrollTop:0},200)
 	})
+
 </script>
 </body>
 </html>

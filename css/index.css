@@ -13,6 +13,9 @@ a:link{
 a:hover{
 	text-decoration: none;
 }
+a:focus{
+	outline: none;
+}
 html{
 	position: relative;
 }
@@ -55,7 +58,28 @@ body{
 .navbar-brand{
 	padding:10px 15px;
 }
-
+.dropdown:hover .dropdown-menu {
+	display: inline-block;
+}
+.dropdown-menu{
+	background-color: darkgrey;
+	min-width: 6em;
+	padding:5px 0;
+	border:1px solid gainsboro;
+	border-radius: 0;
+	right:-19px !important;
+	top:40px;
+}
+.dropdown-menu li{
+	padding:0;
+	margin:0;
+	height:3.1em;
+	line-height: 37px;
+	text-align: center;
+}
+.dropdown-menu li:hover{
+	background-color: dimgrey;
+}
 .navbar-collapse{
 	background-color: #4e4e4e;
 }
